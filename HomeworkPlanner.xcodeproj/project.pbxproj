@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2001C89C1BB83C4F006E23C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001C89B1BB83C4F006E23C8 /* AppDelegate.swift */; };
+		2001C8A11BB83C4F006E23C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2001C89F1BB83C4F006E23C8 /* Main.storyboard */; };
+		2001C8A41BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2001C8A21BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodeld */; };
+		2001C8A61BB83C4F006E23C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2001C8A51BB83C4F006E23C8 /* Assets.xcassets */; };
+		2001C8A91BB83C4F006E23C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2001C8A71BB83C4F006E23C8 /* LaunchScreen.storyboard */; };
+		202A49CE1BB8887600BDE8D9 /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A49CD1BB8887600BDE8D9 /* AssignmentsTableViewController.swift */; };
+		202A49D01BB8888200BDE8D9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A49CF1BB8888200BDE8D9 /* SettingsTableViewController.swift */; };
+		20449F6F1BBB566300FA60E5 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20449F6E1BBB566300FA60E5 /* NameCell.swift */; };
+		20449F731BBB572F00FA60E5 /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20449F721BBB572F00FA60E5 /* NotesCell.swift */; };
+		20449F751BBB57E700FA60E5 /* CompletionSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20449F741BBB57E700FA60E5 /* CompletionSliderCell.swift */; };
+		20449F791BBB589D00FA60E5 /* AssignmentDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20449F781BBB589D00FA60E5 /* AssignmentDetailTVC.swift */; };
+		205B9E211C16311500F5A117 /* AlertPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205B9E201C16311500F5A117 /* AlertPickerCell.swift */; };
+		205B9E231C1672C600F5A117 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205B9E221C1672C600F5A117 /* CourseCell.swift */; };
+		206045351BF45C8B007F9B9A /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206045341BF45C8B007F9B9A /* CoursesTableViewController.swift */; };
+		2060453B1BF468F8007F9B9A /* CourseDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060453A1BF468F8007F9B9A /* CourseDetailTVC.swift */; };
+		209F9F8A1C10035000C89360 /* AlertTimePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F9F891C10035000C89360 /* AlertTimePickerCell.swift */; };
+		20BA5B791BEEE68500A24D25 /* StaticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5B781BEEE68500A24D25 /* StaticTableViewCell.swift */; };
+		20BA5B7B1BEEE97900A24D25 /* DateFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5B7A1BEEE97900A24D25 /* DateFormatHelper.swift */; };
+		20BA5B801BEF090400A24D25 /* EnableAlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA5B7F1BEF090400A24D25 /* EnableAlertCell.swift */; };
+		20BF0C271BFD56FB0051F272 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF0C261BFD56FB0051F272 /* CheckboxButton.swift */; };
+		20BF0C291BFD73CE0051F272 /* ColorSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF0C281BFD73CE0051F272 /* ColorSelectButton.swift */; };
+		20BF0C2B1BFD76470051F272 /* ColorSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF0C2A1BFD76470051F272 /* ColorSelectorCell.swift */; };
+		20C77FF11BB98EBA0078EDF7 /* AssignmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C77FF01BB98EBA0078EDF7 /* AssignmentCell.swift */; };
+		20CFA5AA1BC3513C004EB210 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA5A91BC3513C004EB210 /* DatePickerCell.swift */; };
+		20D2D3CE1BFC420E000A97F7 /* AssignmentCell_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2D3CD1BFC420E000A97F7 /* AssignmentCell_02.swift */; };
+		20E355A91BC1D4B7004D8768 /* checkbox_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E355A71BC1D4B7004D8768 /* checkbox_empty.png */; };
+		20E355AA1BC1D4B7004D8768 /* checkbox_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E355A81BC1D4B7004D8768 /* checkbox_empty@2x.png */; };
+		20E355AD1BC1D61A004D8768 /* checkbox_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E355AB1BC1D61A004D8768 /* checkbox_full.png */; };
+		20E355AE1BC1D61A004D8768 /* checkbox_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E355AC1BC1D61A004D8768 /* checkbox_full@2x.png */; };
+		20E8070C1BF6CDDA000ABFD5 /* CourseSelectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E8070B1BF6CDDA000ABFD5 /* CourseSelectionTVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2001C8981BB83C4F006E23C8 /* HomeworkPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeworkPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2001C89B1BB83C4F006E23C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2001C8A01BB83C4F006E23C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2001C8A31BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeworkPlanner.xcdatamodel; sourceTree = "<group>"; };
+		2001C8A51BB83C4F006E23C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2001C8A81BB83C4F006E23C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2001C8AA1BB83C4F006E23C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2001C8B31BB83C4F006E23C8 /* HomeworkPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkPlannerTests.swift; sourceTree = "<group>"; };
+		2001C8B51BB83C4F006E23C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2001C8BE1BB83C4F006E23C8 /* HomeworkPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkPlannerUITests.swift; sourceTree = "<group>"; };
+		2001C8C01BB83C4F006E23C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202A49CD1BB8887600BDE8D9 /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
+		202A49CF1BB8888200BDE8D9 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		20449F6E1BBB566300FA60E5 /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		20449F721BBB572F00FA60E5 /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		20449F741BBB57E700FA60E5 /* CompletionSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionSliderCell.swift; sourceTree = "<group>"; };
+		20449F781BBB589D00FA60E5 /* AssignmentDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentDetailTVC.swift; sourceTree = "<group>"; };
+		205B9E201C16311500F5A117 /* AlertPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPickerCell.swift; sourceTree = "<group>"; };
+		205B9E221C1672C600F5A117 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		206045341BF45C8B007F9B9A /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		2060453A1BF468F8007F9B9A /* CourseDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailTVC.swift; sourceTree = "<group>"; };
+		209F9F891C10035000C89360 /* AlertTimePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTimePickerCell.swift; sourceTree = "<group>"; };
+		20BA5B781BEEE68500A24D25 /* StaticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewCell.swift; sourceTree = "<group>"; };
+		20BA5B7A1BEEE97900A24D25 /* DateFormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatHelper.swift; sourceTree = "<group>"; };
+		20BA5B7F1BEF090400A24D25 /* EnableAlertCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableAlertCell.swift; sourceTree = "<group>"; };
+		20BF0C261BFD56FB0051F272 /* CheckboxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		20BF0C281BFD73CE0051F272 /* ColorSelectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectButton.swift; sourceTree = "<group>"; };
+		20BF0C2A1BFD76470051F272 /* ColorSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectorCell.swift; sourceTree = "<group>"; };
+		20C77FF01BB98EBA0078EDF7 /* AssignmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentCell.swift; sourceTree = "<group>"; };
+		20CFA5A91BC3513C004EB210 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		20D2D3CD1BFC420E000A97F7 /* AssignmentCell_02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentCell_02.swift; sourceTree = "<group>"; };
+		20E355A71BC1D4B7004D8768 /* checkbox_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_empty.png; sourceTree = "<group>"; };
+		20E355A81BC1D4B7004D8768 /* checkbox_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_empty@2x.png"; sourceTree = "<group>"; };
+		20E355AB1BC1D61A004D8768 /* checkbox_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_full.png; sourceTree = "<group>"; };
+		20E355AC1BC1D61A004D8768 /* checkbox_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_full@2x.png"; sourceTree = "<group>"; };
+		20E8070B1BF6CDDA000ABFD5 /* CourseSelectionTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSelectionTVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2001C8951BB83C4E006E23C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2001C88F1BB83C4E006E23C8 = {
+			isa = PBXGroup;
+			children = (
+				2001C89A1BB83C4F006E23C8 /* HomeworkPlanner */,
+				2001C8B21BB83C4F006E23C8 /* HomeworkPlannerTests */,
+				2001C8BD1BB83C4F006E23C8 /* HomeworkPlannerUITests */,
+				2001C8991BB83C4F006E23C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2001C8991BB83C4F006E23C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2001C8981BB83C4F006E23C8 /* HomeworkPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2001C89A1BB83C4F006E23C8 /* HomeworkPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				2001C89B1BB83C4F006E23C8 /* AppDelegate.swift */,
+				202A49CD1BB8887600BDE8D9 /* AssignmentsTableViewController.swift */,
+				20449F781BBB589D00FA60E5 /* AssignmentDetailTVC.swift */,
+				202A49CF1BB8888200BDE8D9 /* SettingsTableViewController.swift */,
+				206045341BF45C8B007F9B9A /* CoursesTableViewController.swift */,
+				2060453A1BF468F8007F9B9A /* CourseDetailTVC.swift */,
+				20E8070B1BF6CDDA000ABFD5 /* CourseSelectionTVC.swift */,
+				2001C89F1BB83C4F006E23C8 /* Main.storyboard */,
+				207D00A91BF3D21000EE67FB /* Core Data Subclasses */,
+				20AB6DC81BB8D68100E7A072 /* Custom Cells */,
+				20BA5B7C1BEEE98400A24D25 /* Helpers */,
+				20E355A61BC1D2FE004D8768 /* Checkbox */,
+				2001C8A51BB83C4F006E23C8 /* Assets.xcassets */,
+				2001C8A71BB83C4F006E23C8 /* LaunchScreen.storyboard */,
+				2001C8AA1BB83C4F006E23C8 /* Info.plist */,
+				2001C8A21BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodeld */,
+			);
+			path = HomeworkPlanner;
+			sourceTree = "<group>";
+		};
+		2001C8B21BB83C4F006E23C8 /* HomeworkPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2001C8B31BB83C4F006E23C8 /* HomeworkPlannerTests.swift */,
+				2001C8B51BB83C4F006E23C8 /* Info.plist */,
+			);
+			path = HomeworkPlannerTests;
+			sourceTree = "<group>";
+		};
+		2001C8BD1BB83C4F006E23C8 /* HomeworkPlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2001C8BE1BB83C4F006E23C8 /* HomeworkPlannerUITests.swift */,
+				2001C8C01BB83C4F006E23C8 /* Info.plist */,
+			);
+			path = HomeworkPlannerUITests;
+			sourceTree = "<group>";
+		};
+		207D00A91BF3D21000EE67FB /* Core Data Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data Subclasses";
+			sourceTree = "<group>";
+		};
+		20AB6DC81BB8D68100E7A072 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				20C77FF01BB98EBA0078EDF7 /* AssignmentCell.swift */,
+				20D2D3CD1BFC420E000A97F7 /* AssignmentCell_02.swift */,
+				205B9E221C1672C600F5A117 /* CourseCell.swift */,
+				20BA5B781BEEE68500A24D25 /* StaticTableViewCell.swift */,
+				20449F6E1BBB566300FA60E5 /* NameCell.swift */,
+				20449F721BBB572F00FA60E5 /* NotesCell.swift */,
+				20449F741BBB57E700FA60E5 /* CompletionSliderCell.swift */,
+				20CFA5A91BC3513C004EB210 /* DatePickerCell.swift */,
+				20BA5B7F1BEF090400A24D25 /* EnableAlertCell.swift */,
+				205B9E201C16311500F5A117 /* AlertPickerCell.swift */,
+				209F9F891C10035000C89360 /* AlertTimePickerCell.swift */,
+				20BF0C2A1BFD76470051F272 /* ColorSelectorCell.swift */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		20BA5B7C1BEEE98400A24D25 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				20BA5B7A1BEEE97900A24D25 /* DateFormatHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		20E355A61BC1D2FE004D8768 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				20E355A71BC1D4B7004D8768 /* checkbox_empty.png */,
+				20E355A81BC1D4B7004D8768 /* checkbox_empty@2x.png */,
+				20E355AB1BC1D61A004D8768 /* checkbox_full.png */,
+				20E355AC1BC1D61A004D8768 /* checkbox_full@2x.png */,
+				20BF0C261BFD56FB0051F272 /* CheckboxButton.swift */,
+				20BF0C281BFD73CE0051F272 /* ColorSelectButton.swift */,
+			);
+			name = Checkbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2001C8971BB83C4E006E23C8 /* HomeworkPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2001C8C31BB83C4F006E23C8 /* Build configuration list for PBXNativeTarget "HomeworkPlanner" */;
+			buildPhases = (
+				2001C8941BB83C4E006E23C8 /* Sources */,
+				2001C8951BB83C4E006E23C8 /* Frameworks */,
+				2001C8961BB83C4E006E23C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeworkPlanner;
+			productName = HomeworkPlanner;
+			productReference = 2001C8981BB83C4F006E23C8 /* HomeworkPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2001C8901BB83C4E006E23C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Brandon Walker";
+				TargetAttributes = {
+					2001C8971BB83C4E006E23C8 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 2001C8931BB83C4E006E23C8 /* Build configuration list for PBXProject "HomeworkPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2001C88F1BB83C4E006E23C8;
+			productRefGroup = 2001C8991BB83C4F006E23C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2001C8971BB83C4E006E23C8 /* HomeworkPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2001C8961BB83C4E006E23C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E355AA1BC1D4B7004D8768 /* checkbox_empty@2x.png in Resources */,
+				2001C8A91BB83C4F006E23C8 /* LaunchScreen.storyboard in Resources */,
+				20E355A91BC1D4B7004D8768 /* checkbox_empty.png in Resources */,
+				2001C8A61BB83C4F006E23C8 /* Assets.xcassets in Resources */,
+				2001C8A11BB83C4F006E23C8 /* Main.storyboard in Resources */,
+				20E355AE1BC1D61A004D8768 /* checkbox_full@2x.png in Resources */,
+				20E355AD1BC1D61A004D8768 /* checkbox_full.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2001C8941BB83C4E006E23C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20449F731BBB572F00FA60E5 /* NotesCell.swift in Sources */,
+				205B9E211C16311500F5A117 /* AlertPickerCell.swift in Sources */,
+				20BF0C271BFD56FB0051F272 /* CheckboxButton.swift in Sources */,
+				2060453B1BF468F8007F9B9A /* CourseDetailTVC.swift in Sources */,
+				206045351BF45C8B007F9B9A /* CoursesTableViewController.swift in Sources */,
+				20BA5B7B1BEEE97900A24D25 /* DateFormatHelper.swift in Sources */,
+				202A49D01BB8888200BDE8D9 /* SettingsTableViewController.swift in Sources */,
+				20CFA5AA1BC3513C004EB210 /* DatePickerCell.swift in Sources */,
+				20449F751BBB57E700FA60E5 /* CompletionSliderCell.swift in Sources */,
+				20D2D3CE1BFC420E000A97F7 /* AssignmentCell_02.swift in Sources */,
+				20BF0C291BFD73CE0051F272 /* ColorSelectButton.swift in Sources */,
+				20BA5B791BEEE68500A24D25 /* StaticTableViewCell.swift in Sources */,
+				2001C89C1BB83C4F006E23C8 /* AppDelegate.swift in Sources */,
+				202A49CE1BB8887600BDE8D9 /* AssignmentsTableViewController.swift in Sources */,
+				20BF0C2B1BFD76470051F272 /* ColorSelectorCell.swift in Sources */,
+				20C77FF11BB98EBA0078EDF7 /* AssignmentCell.swift in Sources */,
+				205B9E231C1672C600F5A117 /* CourseCell.swift in Sources */,
+				20449F791BBB589D00FA60E5 /* AssignmentDetailTVC.swift in Sources */,
+				2001C8A41BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodeld in Sources */,
+				20449F6F1BBB566300FA60E5 /* NameCell.swift in Sources */,
+				20BA5B801BEF090400A24D25 /* EnableAlertCell.swift in Sources */,
+				20E8070C1BF6CDDA000ABFD5 /* CourseSelectionTVC.swift in Sources */,
+				209F9F8A1C10035000C89360 /* AlertTimePickerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2001C89F1BB83C4F006E23C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2001C8A01BB83C4F006E23C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2001C8A71BB83C4F006E23C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2001C8A81BB83C4F006E23C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2001C8C11BB83C4F006E23C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2001C8C21BB83C4F006E23C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2001C8C41BB83C4F006E23C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeworkPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cs2048.HomeworkPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2001C8C51BB83C4F006E23C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeworkPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cs2048.HomeworkPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2001C8931BB83C4E006E23C8 /* Build configuration list for PBXProject "HomeworkPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2001C8C11BB83C4F006E23C8 /* Debug */,
+				2001C8C21BB83C4F006E23C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2001C8C31BB83C4F006E23C8 /* Build configuration list for PBXNativeTarget "HomeworkPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2001C8C41BB83C4F006E23C8 /* Debug */,
+				2001C8C51BB83C4F006E23C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2001C8A21BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2001C8A31BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodel */,
+			);
+			currentVersion = 2001C8A31BB83C4F006E23C8 /* HomeworkPlanner.xcdatamodel */;
+			path = HomeworkPlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2001C8901BB83C4E006E23C8 /* Project object */;
+}

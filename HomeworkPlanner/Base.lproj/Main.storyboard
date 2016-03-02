@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="MRi-ln-aXL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hfn-XA-J0a">
+            <objects>
+                <tabBarController storyboardIdentifier="rootTabBarController" id="MRi-ln-aXL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="T3f-nM-vUD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ufR-x3-tlP" kind="relationship" relationship="viewControllers" id="tCu-Zm-mzv"/>
+                        <segue destination="n8k-fG-8GF" kind="relationship" relationship="viewControllers" id="mth-id-wnV"/>
+                        <segue destination="46v-9N-2CG" kind="relationship" relationship="viewControllers" id="jZY-io-DPw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngg-zi-edn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="451"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="MXm-wA-r2E">
+            <objects>
+                <tableViewController title="Settings" id="Ude-Tx-ekI" customClass="SettingsTableViewController" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Dm1-ij-3TN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection footerTitle="Swipe Right an Assignment Cell to assert priority" id="IFq-Kf-6tK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="x1e-Z6-0f6">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x1e-Z6-0f6" id="IAg-xO-xbX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="0QV-t8-rpC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Priority Highlight Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Byi-lq-mT1">
+                                                            <rect key="frame" x="8" y="11" width="209" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="dOl-xP-xJs">
+                                        <rect key="frame" x="0.0" y="79" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOl-xP-xJs" id="4nk-kE-WQt">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="kHQ-L7-dcQ">
+                                                    <rect key="frame" x="65" y="7" width="234" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="redSliderValueChanged:" destination="Ude-Tx-ekI" eventType="valueChanged" id="HUS-cK-wVK"/>
+                                                    </connections>
+                                                </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dlu-WO-3Ky">
+                                                    <rect key="frame" x="8" y="11" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="YKv-vN-NRG">
+                                        <rect key="frame" x="0.0" y="123" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YKv-vN-NRG" id="hZX-cG-me0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ifC-N1-HQ3">
+                                                    <rect key="frame" x="8" y="11" width="51" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="iVw-Kk-KCK">
+                                                    <rect key="frame" x="65" y="7" width="234" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="greenSliderValueChanged:" destination="Ude-Tx-ekI" eventType="valueChanged" id="kXH-xD-oNU"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resuseIdentifier" id="d9j-ez-6rk">
+                                        <rect key="frame" x="0.0" y="167" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d9j-ez-6rk" id="yQ5-fy-kEG">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8c-wp-V9L">
+                                                    <rect key="frame" x="8" y="11" width="39" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="he9-as-LjF">
+                                                    <rect key="frame" x="65" y="7" width="234" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="blueSliderValueChanged:" destination="Ude-Tx-ekI" eventType="valueChanged" id="iPx-Lw-39n"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Ude-Tx-ekI" id="p2S-H6-Opa"/>
+                            <outlet property="delegate" destination="Ude-Tx-ekI" id="rw2-5v-0Ha"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bJR-d1-ZwT"/>
+                    <connections>
+                        <outlet property="blueSlider" destination="he9-as-LjF" id="vys-xy-lww"/>
+                        <outlet property="greenSlider" destination="iVw-Kk-KCK" id="1FJ-uq-4W8"/>
+                        <outlet property="prioritizeColorTitleCell" destination="x1e-Z6-0f6" id="MeH-o0-PC1"/>
+                        <outlet property="redSlider" destination="kHQ-L7-dcQ" id="v4M-kV-baR"/>
+                        <outlet property="tintView" destination="0QV-t8-rpC" id="Q2S-nt-O36"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipt-F5-V4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="784"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="zA5-pM-dLx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ufR-x3-tlP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assignments" id="toK-I1-pno"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X86-uT-vzU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b4o-f8-bal" kind="relationship" relationship="rootViewController" id="dHl-2A-cIn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bau-Ia-b4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="136"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="Xt6-Li-vym">
+            <objects>
+                <tableViewController storyboardIdentifier="AssignmentsTVC" title="Assignments" id="b4o-f8-bal" customClass="AssignmentsTableViewController" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Yt-Hm-P48">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="assignmentCell_02" rowHeight="92" id="raW-oy-d7W" customClass="AssignmentCell_02" customModule="HomeworkPlanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="92"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="raW-oy-d7W" id="4g2-3f-S2R">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="91.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="BHY-k1-XX0">
+                                            <rect key="frame" x="8" y="8.5" width="271" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87A-xo-4qo">
+                                            <rect key="frame" x="38" y="31" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ubc-Me-W04" customClass="CheckboxButton" customModule="HomeworkPlanner" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="8" width="38" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="checkboxButtonPressed:" destination="raW-oy-d7W" eventType="touchUpInside" id="0SS-b9-N8Q"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bvm-zP-7vs">
+                                            <rect key="frame" x="38" y="8" width="241" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" id="V7T-aZ-ctm">
+                                            <rect key="frame" x="36" y="53" width="245" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <connections>
+                                                <action selector="completionSliderValueChanged:" destination="raW-oy-d7W" eventType="valueChanged" id="Rcg-nG-tTa"/>
+                                            </connections>
+                                        </slider>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="checkboxButton" destination="Ubc-Me-W04" id="CuB-Pv-BvN"/>
+                                    <outlet property="completionSlider" destination="V7T-aZ-ctm" id="cL2-2l-sg8"/>
+                                    <outlet property="courseLabel" destination="Bvm-zP-7vs" id="KE3-Vq-XJM"/>
+                                    <outlet property="nameLabel" destination="87A-xo-4qo" id="WaZ-lM-jPQ"/>
+                                    <outlet property="tintView" destination="BHY-k1-XX0" id="Bkf-uj-RVr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b4o-f8-bal" id="pah-Tt-v4H"/>
+                            <outlet property="delegate" destination="b4o-f8-bal" id="scV-zb-aR8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2wK-4Q-rcP">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="1I4-GM-6N5">
+                            <rect key="frame" x="78.5" y="7.5" width="163" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="To Do"/>
+                                <segment title="Completed"/>
+                            </segments>
+                            <connections>
+                                <action selector="stateSelectorValueChanged:" destination="b4o-f8-bal" eventType="valueChanged" id="1g7-oe-YVz"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wo4-FL-jny">
+                            <connections>
+                                <segue destination="XMd-mT-7KD" kind="modal" identifier="newAssignmentSegue" id="Ue4-RI-DuW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stateSegmentedControl" destination="1I4-GM-6N5" id="SPv-hC-zeH"/>
+                        <segue destination="hQZ-GL-LXI" kind="push" identifier="assignmentDetailSegue" id="t1k-wY-DKN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXe-gp-NyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="136"/>
+        </scene>
+        <!--AssignmentDetailTVC-->
+        <scene sceneID="JqX-gg-A4t">
+            <objects>
+                <tableViewController title="AssignmentDetailTVC" id="hQZ-GL-LXI" customClass="AssignmentDetailTVC" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="obJ-md-yZS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="P6p-GZ-Yfm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" id="7lt-ST-IeQ" customClass="NameCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7lt-ST-IeQ" id="7VT-v7-jlV">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Untitled Assignment" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="U24-Oz-r2T">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                                    <connections>
+                                                        <action selector="nameTextFieldEditingDidBegin:" destination="hQZ-GL-LXI" eventType="editingDidBegin" id="3Wd-Lz-oDh"/>
+                                                        <action selector="nameTextFieldValueChanged:" destination="hQZ-GL-LXI" eventType="editingChanged" id="ajZ-8S-NIB"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameTextField" destination="U24-Oz-r2T" id="hoP-AE-3ZU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesCell" rowHeight="95" id="rhb-kz-YMk" customClass="NotesCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rhb-kz-YMk" id="Ea2-cI-ci7">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="bf7-Ho-Jlk">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="94.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="78Y-pM-yS2">
+                                                    <rect key="frame" x="12.5" y="8" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="notesTextView" destination="bf7-Ho-Jlk" id="OpE-UP-UHr"/>
+                                            <outlet property="placeholderLabel" destination="78Y-pM-yS2" id="7MC-MX-1mh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="courseCell" id="awh-gE-Hnk" customClass="StaticTableViewCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="238" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awh-gE-Hnk" id="8Rf-yR-ydP">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ctw-j7-Lxb">
+                                                    <rect key="frame" x="6" y="12" width="275" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Percent Complete" id="QSp-vS-8Qw">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="completionSliderCell" id="J0h-bm-JCU" customClass="CompletionSliderCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="332" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0h-bm-JCU" id="zXX-Ye-52H">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uSy-Km-ftp">
+                                                    <rect key="frame" x="270" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" id="2Ca-Kf-nQ0">
+                                                    <rect key="frame" x="55" y="7" width="209" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="completionSliderValueChanged:" destination="hQZ-GL-LXI" eventType="valueChanged" id="iRO-4z-QpK"/>
+                                                    </connections>
+                                                </slider>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ri1-kw-s8g" customClass="CheckboxButton" customModule="HomeworkPlanner" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="0.0" width="41" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="toggleCheckboxButton:" destination="hQZ-GL-LXI" eventType="touchUpInside" id="fmR-lO-Z2K"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkboxButton" destination="Ri1-kw-s8g" id="26C-Tb-hfE"/>
+                                            <outlet property="completionSlider" destination="2Ca-Kf-nQ0" id="Vj1-FV-umI"/>
+                                            <outlet property="percentLabel" destination="uSy-Km-ftp" id="rDQ-IB-55m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="6CQ-7H-b8P">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dueDateTitleCell" textLabel="VF4-mL-mZk" detailTextLabel="o1d-iW-Qgr" style="IBUITableViewCellStyleValue1" id="eyB-Dg-4Uw" customClass="StaticTableViewCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="412" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyB-Dg-4Uw" id="Md5-E9-zWp">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VF4-mL-mZk">
+                                                    <rect key="frame" x="15" y="12" width="67.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o1d-iW-Qgr">
+                                                    <rect key="frame" x="263.5" y="12" width="41.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="datePickerCell" rowHeight="216" id="zsH-qJ-7xG" customClass="DatePickerCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="456" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zsH-qJ-7xG" id="0GP-mo-M1r">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="5" id="cqb-6w-giv">
+                                                    <rect key="frame" x="0.0" y="8" width="320" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="465857249.181126">
+                                                        <!--2015-10-06 20:47:29 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="datePickerValueChanged:" destination="hQZ-GL-LXI" eventType="valueChanged" id="2cP-xC-Cac"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="datePicker" destination="cqb-6w-giv" id="qkh-Ls-HBI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="enableAlertCell" textLabel="EuG-Ka-M3D" detailTextLabel="IAH-f4-5Ep" style="IBUITableViewCellStyleValue1" id="AoW-Lb-Ahl" customClass="EnableAlertCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="672" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AoW-Lb-Ahl" id="AwG-KD-nKF">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="IlY-d1-rUE">
+                                                    <rect key="frame" x="8" y="7" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="enableSwitchValueChanged:" destination="hQZ-GL-LXI" eventType="valueChanged" id="pbe-gj-LxC"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EuG-Ka-M3D">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IAH-f4-5Ep">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="enableSwitch" destination="IlY-d1-rUE" id="aLr-JN-Bu9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="alertDatePickerCell" rowHeight="216" id="hox-uI-GV5" customClass="AlertPickerCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="716" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hox-uI-GV5" id="sP6-OS-mOv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView contentMode="scaleToFill" id="HQC-Er-4nt">
+                                                    <rect key="frame" x="0.0" y="8" width="320" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </pickerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alertPicker" destination="HQC-Er-4nt" id="bh1-zN-LVK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="alertDateTitleCell" textLabel="UkD-3d-1ax" detailTextLabel="eKe-sQ-Iut" style="IBUITableViewCellStyleValue1" id="pft-ge-JdW" customClass="StaticTableViewCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="932" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pft-ge-JdW" id="zJS-aS-kWl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UkD-3d-1ax">
+                                                    <rect key="frame" x="15" y="12" width="35" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="None" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eKe-sQ-Iut">
+                                                    <rect key="frame" x="246" y="12" width="39" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="alertDatePickerCell" rowHeight="216" id="vAm-8l-JxS" customClass="AlertTimePickerCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="976" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAm-8l-JxS" id="Rbj-oe-qzf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" id="Sa2-76-nEq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="470814534.03124797">
+                                                        <!--2015-12-03 05:48:54 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="alertTimePickerValueChanged:" destination="hQZ-GL-LXI" eventType="valueChanged" id="sWt-s9-4uf"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alertDatePicker" destination="Sa2-76-nEq" id="BDT-fM-bpY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="s6c-TE-8hf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deleteButtonCell" id="jve-FT-QJM" customClass="StaticTableViewCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1228" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jve-FT-QJM" id="91H-5E-Ino">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="075-4t-2A3">
+                                                    <rect key="frame" x="96" y="7" width="129" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Delete Assignment">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hQZ-GL-LXI" id="7JP-Qu-ZhX"/>
+                            <outlet property="delegate" destination="hQZ-GL-LXI" id="UyT-Xo-Dg5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2ym-e0-vsj"/>
+                    <connections>
+                        <outlet property="alertPickerCell" destination="hox-uI-GV5" id="F9G-83-2Mo"/>
+                        <outlet property="alertTimePickerCell" destination="vAm-8l-JxS" id="dhn-zc-Rfa"/>
+                        <outlet property="alertTimeTitleCell" destination="pft-ge-JdW" id="auh-ad-hsL"/>
+                        <outlet property="completionSliderCell" destination="J0h-bm-JCU" id="Pje-vB-bO7"/>
+                        <outlet property="courseCell" destination="awh-gE-Hnk" id="lLj-uu-sNQ"/>
+                        <outlet property="courseNameLabel" destination="ctw-j7-Lxb" id="aBc-5V-Evu"/>
+                        <outlet property="deleteButtonCell" destination="jve-FT-QJM" id="1ZA-Lb-b8l"/>
+                        <outlet property="dueDatePickerCell" destination="zsH-qJ-7xG" id="oSj-cP-cuI"/>
+                        <outlet property="dueDateTitleCell" destination="eyB-Dg-4Uw" id="FRC-7z-3lX"/>
+                        <outlet property="enableAlertCell" destination="AoW-Lb-Ahl" id="4dv-YN-D2s"/>
+                        <outlet property="nameCell" destination="7lt-ST-IeQ" id="AiH-Xh-aaL"/>
+                        <outlet property="notesCell" destination="rhb-kz-YMk" id="HVi-aA-8dB"/>
+                        <segue destination="GWY-Wn-Pdw" kind="push" identifier="courseSelectionSegue" id="Z3V-dA-q4d"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGR-lP-JyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="136"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="hlm-hf-lJ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="46v-9N-2CG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="5oq-XE-201"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pQb-Tx-QnH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ude-Tx-ekI" kind="relationship" relationship="rootViewController" id="Fja-eO-0FL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pos-ir-dZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="784"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="Lz2-Rq-wsY">
+            <objects>
+                <tableViewController title="Courses" id="Eyp-0l-DlJ" customClass="CoursesTableViewController" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zUM-bP-kvP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="courseCell" id="JH9-EN-Pmu" customClass="CourseCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JH9-EN-Pmu" id="4w2-eP-7kP">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cyn-5e-TIM">
+                                            <rect key="frame" x="8" y="11" width="271" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="cyn-5e-TIM" id="ovQ-3T-auC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eyp-0l-DlJ" id="fhU-Gf-CXf"/>
+                            <outlet property="delegate" destination="Eyp-0l-DlJ" id="4Uq-IA-CXv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="VKx-fe-gAm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="56O-a7-A4b">
+                            <connections>
+                                <segue destination="6jH-v4-27r" kind="modal" identifier="newCourseSegue" id="91f-yJ-bXe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="fKY-P8-Dcb" kind="push" identifier="courseDetailSegue" id="ty7-Gj-Z5w"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pm0-EU-TSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="1446"/>
+        </scene>
+        <!--Course DetailTVC-->
+        <scene sceneID="JVn-kd-Ab8">
+            <objects>
+                <tableViewController id="fKY-P8-Dcb" customClass="CourseDetailTVC" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="KgR-YQ-0Z0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="3GV-Vr-3ec">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" id="5oe-pA-6jQ" customClass="NameCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5oe-pA-6jQ" id="ibI-AR-Ce6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Untitled Course" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="pS0-8o-e5f">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                    <connections>
+                                                        <action selector="nameTextFieldEditingDidBegin:" destination="fKY-P8-Dcb" eventType="editingDidBegin" id="SHA-Ef-5Vs"/>
+                                                        <action selector="nameTextFieldValueChanged:" destination="fKY-P8-Dcb" eventType="editingChanged" id="naS-Lf-5JX"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameTextField" destination="pS0-8o-e5f" id="9WB-Sx-Vkn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Fg6-V8-zgE">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="colorSelectCell" rowHeight="207" id="603-Vs-Dmb" customClass="ColorSelectorCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115" width="320" height="207"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="603-Vs-Dmb" id="ri0-OM-umJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="206.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="0C3-mX-qU4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deleteButtonCell" id="Due-Zg-lcq" customClass="StaticTableViewCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="358" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Due-Zg-lcq" id="hoM-OW-fQl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xZn-Xc-Wjn">
+                                                    <rect key="frame" x="111" y="7" width="98" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Delete Course">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fKY-P8-Dcb" id="kaf-sy-CBa"/>
+                            <outlet property="delegate" destination="fKY-P8-Dcb" id="2SF-df-XwO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="KKy-sy-8qa"/>
+                    <connections>
+                        <outlet property="colorSelectorCell" destination="603-Vs-Dmb" id="v2Y-gq-Vxn"/>
+                        <outlet property="deleteButtonCell" destination="Due-Zg-lcq" id="wPH-tq-cPU"/>
+                        <outlet property="nameCell" destination="5oe-pA-6jQ" id="XEd-Qd-yQM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0C-qu-vZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="1809"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="moy-Ak-Vuo">
+            <objects>
+                <navigationController id="6jH-v4-27r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kCt-F4-o19">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fKY-P8-Dcb" kind="relationship" relationship="rootViewController" id="xsA-Ow-vNa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYR-aa-fPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="1128"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="j6R-y1-n9D">
+            <objects>
+                <navigationController id="n8k-fG-8GF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Courses" id="wyR-Q7-OrW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1n-de-DK0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Eyp-0l-DlJ" kind="relationship" relationship="rootViewController" id="heq-Y0-tcE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOo-82-hcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="1446"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Pa-1k-7mQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XMd-mT-7KD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="v3j-y5-oTg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v6a-zi-Blc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hQZ-GL-LXI" kind="relationship" relationship="rootViewController" id="THe-Ar-loX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGT-Rj-Af7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="-529"/>
+        </scene>
+        <!--Course SelectionTVC-->
+        <scene sceneID="txI-X9-hUy">
+            <objects>
+                <tableViewController id="GWY-Wn-Pdw" customClass="CourseSelectionTVC" customModule="HomeworkPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kh9-8C-J7F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseCell" id="T9a-LO-9yg" customClass="CourseCell" customModule="HomeworkPlanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T9a-LO-9yg" id="wGp-5x-ZcU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HMx-il-tvf">
+                                            <rect key="frame" x="8" y="11" width="304" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="HMx-il-tvf" id="L6Z-81-1jR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GWY-Wn-Pdw" id="im6-qH-L9k"/>
+                            <outlet property="delegate" destination="GWY-Wn-Pdw" id="oGb-Rt-OEX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QOh-ZD-jOL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTt-cm-WaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="-162"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ty7-Gj-Z5w"/>
+        <segue reference="t1k-wY-DKN"/>
+    </inferredMetricsTieBreakers>
+</document>
